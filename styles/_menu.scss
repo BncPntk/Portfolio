@@ -1,0 +1,106 @@
+// MENU FADE IN-OUT
+.scale-in-hor-left {
+  -webkit-animation: scale-in-hor-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+// OUT
+.scale-out-hor-left {
+  -webkit-animation: scale-out-hor-left 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: scale-out-hor-left 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes scale-out-hor-left {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+}
+@keyframes scale-out-hor-left {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+}
+
+// MENU LIST
+.menu {
+  z-index: 2;
+  position: fixed;
+  top: 4rem;
+  left: 4rem;
+  -webkit-box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.2);
+
+  a {
+    color: $color-font-menu;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+
+    &:hover {
+      color: $color-font-hover;
+    }
+    &:hover .underline {
+      border-color: rgba($color-font-hover, 1);
+    }
+
+    .underline {
+      border-top: 1px solid $color-bg-primary;
+      border-top-right-radius: 1px;
+      border-top-left-radius: 1px;
+      border-bottom: 1px solid $color-bg-primary;
+      border-bottom-right-radius: 1px;
+      border-bottom-left-radius: 1px;
+    }
+  }
+}
