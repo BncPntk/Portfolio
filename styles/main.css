@@ -348,8 +348,10 @@ body .parallax:nth-child(3) .aboutmeText {
 }
 
 body .parallax:nth-child(4) {
-  background-image: url("/images/1.jpg");
-  background-size: cover;
+  height: 1800px;
+  background-image: url("/images/background.png");
+  background-color: #4e4631;
+  background-position: top center;
   background-attachment: fixed;
 }
 
@@ -374,11 +376,82 @@ body .parallax:nth-child(4) .links {
   width: 35rem;
 }
 
+body .parallax:nth-child(4) #phone1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -25rem;
+  right: -7rem;
+  width: 33rem;
+}
+
+body .parallax:nth-child(4) #phone2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -6rem;
+  right: 3rem;
+  width: 35rem;
+  rotate: 45deg;
+}
+
 body .parallax:nth-child(5) {
-  background-color: #56b343;
+  height: 2000px;
+  background-image: url("/images/background2.png");
+  background-color: #4e4631;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+body .parallax:nth-child(5) #phone3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -25rem;
+  right: 2rem;
+  width: 35rem;
+  rotate: 0deg;
+}
+
+body .parallax:nth-child(5) #phone4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -8rem;
+  right: -4rem;
+  width: 35rem;
 }
 
 body .parallax:nth-child(6) {
-  background-color: #4e4631;
+  height: 2000px;
+  background-image: url("/images/background3.png");
+  background-color: #9db5b2;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+body .parallax:nth-child(6) #phone5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -30rem;
+  right: -5rem;
+  width: 30rem;
+  rotate: -30deg;
+}
+
+body .parallax:nth-child(6) #phone6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -10rem;
+  right: -4rem;
+  width: 35rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -170,10 +170,13 @@ body {
       }
     }
     &:nth-child(4) {
-      // height: 800px;
-      background-image: url('/images/1.jpg');
+      height: 1800px;
+      background-image: url('/images/background.png');
+      background-color: $color-bg-primary;
+      background-position: top center;
+      // background-image: url('/images/tablet1.png');
       // background-color: $color-bg-primary;
-      background-size: cover;
+      // background-size:
       background-attachment: fixed;
 
       // -webkit-transform: translate3d(0, 0, 0);
@@ -201,19 +204,74 @@ body {
       h3 {
         // margin: 0;
       }
+
+      #phone1 {
+        display: flex;
+        position: relative;
+        top: -25rem;
+        right: -7rem;
+        width: 33rem;
+      }
+
+      #phone2 {
+        display: flex;
+        position: relative;
+        top: -6rem;
+        right: 3rem;
+        width: 35rem;
+        rotate: 45deg;
+      }
     }
 
     &:nth-child(5) {
-      background-color: rgb(86, 179, 67);
+      height: 2000px;
+      background-image: url('/images/background2.png');
+      background-color: $color-bg-primary;
+      background-position: top center;
+      // background-color: $color-font-dark;
+      background-attachment: fixed;
+
+      #phone3 {
+        display: flex;
+        position: relative;
+        top: -25rem;
+        right: 2rem;
+        width: 35rem;
+        rotate: 0deg;
+      }
+
+      #phone4 {
+        display: flex;
+        position: relative;
+        top: -8rem;
+        right: -4rem;
+        width: 35rem;
+      }
     }
     &:nth-child(6) {
-      background-color: $color-bg-primary;
+      height: 2000px;
+      background-image: url('/images/background3.png');
+      background-color: $color-font-hover;
+      background-position: top center;
+      // background-color: $color-font-dark;
+      background-attachment: fixed;
+
+      #phone5 {
+        display: flex;
+        position: relative;
+        top: -30rem;
+        right: -5rem;
+        width: 30rem;
+        rotate: -30deg;
+      }
+
+      #phone6 {
+        display: flex;
+        position: relative;
+        top: -10rem;
+        right: -4rem;
+        width: 35rem;
+      }
     }
   }
 }
-// h2 {
-//   font-size: 16px;
-//   background-color: #eee;
-//   padding: 8px 24px;
-//   border-radius: 16px;
-// }
