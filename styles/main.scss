@@ -174,7 +174,9 @@ body {
     }
     &:nth-child(4) {
       height: 1800px;
-      background-image: url('/images/backgroundd.png');
+      background-image: url('/images/1.png');
+      // CHROME
+      // background-image: url('images/1.png');
       background-color: $color-main-1;
       background-position: top center;
       // background-image: url('/images/tablet1.png');
@@ -228,7 +230,7 @@ body {
 
     &:nth-child(5) {
       height: 2000px;
-      background-image: url('images/background2.png');
+      background-image: url('/images/2.png');
       background-color: $color-main-1;
       background-position: top center;
       // background-color: $color-font-dark;
@@ -253,7 +255,7 @@ body {
     }
     &:nth-child(6) {
       height: 2000px;
-      background-image: url('images/background3.1.png');
+      background-image: url('/images/3.png');
       background-color: $color-font-hover;
       background-position: top center;
       // background-color: $color-font-dark;
@@ -271,14 +273,25 @@ body {
       #phone6 {
         display: flex;
         position: relative;
-        top: -10rem;
+        top: -17rem;
         right: -4rem;
         width: 35rem;
       }
     }
     &:nth-child(7) {
-      height: 1500px;
-      background-color: tomato;
+      margin-top: -60rem;
+      height: 1600px;
+      background-color: $color-main-1;
+      .cvBtn {
+        margin-top: 50rem;
+        color: $color-main-1;
+        background-color: $color-main-4;
+        font-size: 1.5rem;
+        width: 20rem;
+        &:hover {
+          background-color: $color-main-3;
+        }
+      }
     }
   }
 }

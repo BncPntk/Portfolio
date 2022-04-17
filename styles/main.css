@@ -357,7 +357,7 @@ body .parallax:nth-child(3) .aboutmeText {
 
 body .parallax:nth-child(4) {
   height: 1800px;
-  background-image: url("/images/background.png");
+  background-image: url("/images/1.png");
   background-color: #66521f;
   background-position: top center;
   background-attachment: fixed;
@@ -407,7 +407,7 @@ body .parallax:nth-child(4) #phone2 {
 
 body .parallax:nth-child(5) {
   height: 2000px;
-  background-image: url("/images/background2.png");
+  background-image: url("/images/2.png");
   background-color: #66521f;
   background-position: top center;
   background-attachment: fixed;
@@ -436,7 +436,7 @@ body .parallax:nth-child(5) #phone4 {
 
 body .parallax:nth-child(6) {
   height: 2000px;
-  background-image: url("/images/background3.1.png");
+  background-image: url("/images/3.png");
   background-color: #9db5b2;
   background-position: top center;
   background-attachment: fixed;
@@ -458,14 +458,26 @@ body .parallax:nth-child(6) #phone6 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  top: -10rem;
+  top: -17rem;
   right: -4rem;
   width: 35rem;
 }
 
 body .parallax:nth-child(7) {
-  height: 1500px;
-  margin-top: -40rem;
-  background-color: tomato;
+  margin-top: -60rem;
+  height: 1600px;
+  background-color: #66521f;
+}
+
+body .parallax:nth-child(7) .cvBtn {
+  margin-top: 50rem;
+  color: #66521f;
+  background-color: #f5efe0;
+  font-size: 1.5rem;
+  width: 20rem;
+}
+
+body .parallax:nth-child(7) .cvBtn:hover {
+  background-color: #e2d0a1;
 }
 /*# sourceMappingURL=main.css.map */
