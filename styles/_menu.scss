@@ -75,6 +75,7 @@
 
 // MENU LIST
 .menu {
+  min-width: 9rem;
   z-index: 2;
   position: fixed;
   top: 4rem;
@@ -83,22 +84,23 @@
   box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.2);
 
   a {
-    color: $color-font-menu;
+    color: $color-secondary-2;
     text-decoration: none;
     margin-bottom: 0.5rem;
 
     &:hover {
-      color: $color-font-hover;
+      color: $color-secondary-1;
     }
     &:hover .underline {
-      border-color: rgba($color-font-hover, 1);
+      border-top: 1px solid $color-main-1;
+      border-bottom: 1px solid $color-main-1;
     }
 
     .underline {
-      border-top: 1px solid $color-bg-primary;
+      border-top: 1px solid $color-main-1;
       border-top-right-radius: 1px;
       border-top-left-radius: 1px;
-      border-bottom: 1px solid $color-bg-primary;
+      border-bottom: 1px solid $color-main-1;
       border-bottom-right-radius: 1px;
       border-bottom-left-radius: 1px;
     }

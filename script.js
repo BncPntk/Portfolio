@@ -98,6 +98,10 @@ window.onscroll = () => {
         title.innerHTML = 'Projekt 3';
     } else {
         title.innerHTML = 'The End';
+        title.style.position = 'relative';
+        text.style.position = 'relative';
+        tags.style.position = 'relative';
+        links.style.position = 'relative';
     }
 
 }
