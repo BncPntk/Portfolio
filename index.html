@@ -17,6 +17,7 @@
 
     <title>Bence Pentek</title>
   </head>
+
   <body>
     <div class="container-fluid parallax p-0">
       <div class="row parallax">
@@ -26,31 +27,33 @@
             id="menuList"
             class="menu rounded d-flex flex-column bg-light text-dark text-center p-4 d-none"
           >
-            <a href="#link" class="jello-horizontal">
+            <a href="#" class="jello-horizontal">
               <div class="my-1 mx-1"></div>
               Kezdőlap
               <div class="underline my-1 mx-1"></div>
             </a>
-            <a href="#link">
+            <a href="#parallax-3">
               <div class="my-1 mx-1"></div>
               Rólam
               <div class="underline my-1 mx-1"></div>
             </a>
-            <a href="#link">
+            <a href="#title">
               <div class="my-1 mx-1"></div>
               Munkák
               <div class="underline my-1 mx-1"></div>
             </a>
-            <a href="#link">
+            <a href="#cv" id="cvMenu">
               <div class="my-1 mx-1"></div>
               CV
               <div class="underline my-1 mx-1"></div>
             </a>
           </nav>
 
-          <h2 class="d-flex flex-row slide-in-bottom px-1">Bence Pentek</h2>
+          <h2 id="home" class="d-flex flex-row slide-in-bottom px-1">Bence Pentek</h2>
           <h3 class="who slide-in-right">Software Information Technology Student</h3>
-          <i id="ghMain" class="bi bi-github p-3 githubLogo slide-in-right"></i>
+          <a href="https://github.com/BncPntk" target="_blank">
+            <i id="ghMain" class="bi bi-github p-3 githubLogo slide-in-right"></i>
+          </a>
         </div>
 
         <div id="parallax-2" class="col-12 parallax">
@@ -72,29 +75,33 @@
             <div class="row">
               <div class="col-7">
                 <div class="left-side-content p-3">
-                  <h3 class="title mb-4">Example Name</h3>
+                  <h3 id="title" class="title mb-4">Example Name</h3>
                   <p class="text mb-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates ratione iusto
                     nobis libero consectetur quibusdam? Aliquid eum ipsa accusantium aperiam soluta quam,
                     animi veniam corrupti iusto quod blanditiis sequi modi dicta fugit! Sed aperiam ipsum,
                     deserunt quia assumenda beatae?
                   </p>
-                  <div class="row tags mb-3">
-                    <div class="col">1</div>
-                    <div class="col">2</div>
-                    <div class="col">3</div>
-                    <div class="col">4</div>
-                    <div class="col">5</div>
+                  <div class="row tags mb-3 text-center">
+                    <div id="tags" class="col-2 p-0 m-2"></div>
+                    <div id="tags" class="col-2 p-0 m-2"></div>
+                    <div id="tags" class="col-2 p-0 my-2"></div>
+                    <div id="tags" class="col-2 p-0 m-2"></div>
+                    <div id="tags" class="col-4 p-0 m-2"></div>
                   </div>
-                  <div class="row links mb-4">
-                    <div class="col-4">Site</div>
-                    <div class="col-4">GitHub link</div>
+                  <div class="row links mb-4 d-flex justify-content-start mt-3">
+                    <div class="col-2 siteIcon mb-4 d-flex justify-content-start">
+                      <a href=""><i class="bi bi-globe2"></i></a>
+                    </div>
+                    <div class="col-2 githubIcon mb-4 d-flex justify-content-start">
+                      <a href=""><i class="bi bi-github"></i></a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-5">
-                <img id="phone1" class="" src="images/phone1.png" />
-                <img id="phone2" class="" src="images/phone1.png" />
+                <img id="phone1" class="" src="/images/twitter/phone1.png" />
+                <img id="phone2" class="" src="/images/twitter/phone2.png" />
                 <!-- <img id="tablet1" class="" src="/images/tablet1.png" /> -->
               </div>
             </div>
@@ -107,8 +114,8 @@
             <div class="row">
               <div class="col-7"></div>
               <div class="col-5">
-                <img id="phone3" class="" src="images/phone1.png" />
-                <img id="phone4" class="" src="images/phone1.png" />
+                <img id="phone3" class="" src="/images/tvSearch/phone1.png" />
+                <img id="phone4" class="" src="/images/tvSearch/phone2.png" />
                 <!-- <img id="tablet1" class="" src="/images/tablet1.png" /> -->
               </div>
             </div>
@@ -120,8 +127,8 @@
             <div class="row">
               <div class="col-7"></div>
               <div class="col-5">
-                <img id="phone5" class="" src="images/phone1.png" />
-                <img id="phone6" class="" src="images/phone1.png" />
+                <img id="phone5" class="" src="/images/pizza/phone1.png" />
+                <img id="phone6" class="" src="/images/pizza/phone2.png" />
                 <!-- <img id="tablet1" class="" src="/images/tablet1.png" /> -->
               </div>
             </div>
@@ -130,13 +137,14 @@
 
         <div id="parallax-7" class="col-12 parallax">
           <p class="aboutmeText">
-            <button class="btn btn-lg cvBtn">CV letöltése PDF-ben</button>
+            <button id="cv" class="btn btn-lg cvBtn">CV letöltése PDF-ben</button>
           </p>
         </div>
       </div>
     </div>
 
     <!-- JS -->
+    <script src="data.js"></script>
     <script src="script.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script

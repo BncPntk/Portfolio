@@ -6,8 +6,9 @@ const menuList = document.querySelector('#menuList');
 const leftSideContent = document.querySelector('.left-side-content');
 const title = document.querySelector('.title');
 const text = document.querySelector('.text');
-const tags = document.querySelector('.tags');
+const tag = document.querySelector('.tags');
 const links = document.querySelector('.links');
+let tags = document.querySelectorAll('#tags');
 // PHONES
 const phone1 = document.querySelector('#phone1');
 const phone2 = document.querySelector('#phone2');
@@ -77,31 +78,72 @@ window.onscroll = () => {
 
     // CHANGE CONTENT ON SCROLL
     console.log('position: ', pos);
-    if (pos >= 900) {
+    if (pos >= 800) {
         title.style.position = 'fixed';
         text.style.position = 'fixed';
-        tags.style.position = 'fixed';
+        tag.style.position = 'fixed';
         links.style.position = 'fixed';
     } else {
         title.style.position = 'relative';
         text.style.position = 'relative';
-        tags.style.position = 'relative';
+        tag.style.position = 'relative';
         links.style.position = 'relative';
     }
+
     if (pos >= 800 && pos <= 2500) {
-        title.innerHTML = 'Projekt 1';
+        tagsColor(0);
+
+        title.innerHTML = data[0].title;
+        text.innerHTML = data[0].text;
     }
+
     else if (pos >= 2500 && pos <= 4400) {
-        title.innerHTML = 'Projekt 2';
+        tagsColor(1);
+
+        title.innerHTML = data[1].title;
+        text.innerHTML = data[1].text;
     }
     else if (pos >= 4400 && pos <= 6000) {
-        title.innerHTML = 'Projekt 3';
+        tagsColor(2);
+
+        title.innerHTML = data[2].title;
+        text.innerHTML = data[2].text;
+        console.log('yo3');
     } else {
         title.innerHTML = 'The End';
         title.style.position = 'relative';
         text.style.position = 'relative';
-        tags.style.position = 'relative';
+        tag.style.position = 'relative';
         links.style.position = 'relative';
+        console.log('yo4');
     }
 
+}
+
+function tagsColor(n) {
+    // SET COLOR OF TAGS
+    for (let i = 0; i < data[n].tags.length; i++) {
+        tags[i].innerHTML = data[n].tags[i];
+        if (tags[i].innerHTML.toUpperCase() === 'HTML') {
+            tags[i].style.color = '#e34c26 ';
+        }
+        else if (tags[i].innerHTML.toUpperCase() === 'CSS') {
+            tags[i].style.color = '#264de4 ';
+        }
+        else if (tags[i].innerHTML.toUpperCase() === 'JS') {
+            tags[i].style.color = '#ebd026 ';
+        }
+        else if (tags[i].innerHTML.toUpperCase() === 'SCSS') {
+            tags[i].style.color = '#cc6699'
+        }
+        else if (tags[i].innerHTML.toUpperCase() === 'BOOTSTRAP') {
+            tags[i].style.color = '#563d7c '
+        }
+        else if (tags[i].innerHTML === '') {
+            tags[i].style.color = 'rgba(0,0,0,0)';
+        }
+        else {
+            tags[i].style.color = '#bfe634ff';
+        }
+    }
 }

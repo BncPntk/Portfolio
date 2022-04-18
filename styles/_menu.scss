@@ -78,8 +78,8 @@
   min-width: 9rem;
   z-index: 2;
   position: fixed;
-  top: 4rem;
-  left: 4rem;
+  top: 5rem;
+  left: 5rem;
   -webkit-box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.2);
 
@@ -92,15 +92,15 @@
       color: $color-secondary-1;
     }
     &:hover .underline {
-      border-top: 1px solid $color-main-1;
-      border-bottom: 1px solid $color-main-1;
+      border-top: 1px solid $color-main-4;
+      border-bottom: 1px solid $color-main-4;
     }
 
     .underline {
-      border-top: 1px solid $color-main-1;
+      border-top: 1px solid $color-main-4;
       border-top-right-radius: 1px;
       border-top-left-radius: 1px;
-      border-bottom: 1px solid $color-main-1;
+      border-bottom: 1px solid $color-main-4;
       border-bottom-right-radius: 1px;
       border-bottom-left-radius: 1px;
     }

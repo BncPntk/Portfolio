@@ -1,24 +1,24 @@
 const data = [
     {
-        name: '',
-        text: '',
-        tags: [],
+        title: 'Twitter Clone',
+        text: 'Twitter Clone',
+        tags: ['html', 'css', 'js', '', ''],
         link1: '',
         link2: '',
 
     },
     {
-        name: '',
-        text: '',
-        tags: [],
+        title: 'TV Search',
+        text: 'TV Search',
+        tags: ['html', 'css', 'js', 'bootstrap', 'axios API'],
         link1: '',
         link2: '',
 
     },
     {
-        name: '',
-        text: '',
-        tags: [],
+        title: 'Pizza ',
+        text: 'Pizza',
+        tags: ['HTML', 'CSS', 'js', 'bootstrap', '',],
         link1: '',
         link2: '',
 
