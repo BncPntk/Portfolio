@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -12,64 +14,167 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/main.css" />
+
     <title>Bence Pentek</title>
   </head>
 
   <body>
+    <div id="loading" class="loading">
       <div class="container-fluid">
-       
-
-    <div class="container-1">
-      <div class="parallax-wrapper">
-        <nav class="navbar sticky-top navbar-light ">
-            <div class="container-fluid navbar-body">
-                <i id="menuBtn" class="bi bi-text-left p-3 menu-icon"></i>
-            </div>
-          </nav>
-        <div id="intro" class="parallax-group intro-screen">
-           
-            <h1 class=" name">Bence Pentek</h1></div>
-            
-            <div id="group-0" class="parallax-group">
-              <div class="parallax-layer aboutme-layer">
-                <div class="container-fluid container-2">
-                  <h1 class="line-1 visib">Magamról</h1>
-                  <p class="container2P">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laudantium saepe, maiores, hic maxime
-                    rerum incidunt labore magnam iure minima rem repellendus facilis atque doloribus fugiat illo?
-                  </p>
-                </div>
-              </div>
-            </div>  
-            <div id="group-1" class="parallax-group">
-            <div class="nameOf">Projekt</div>
-
-          <div class="parallax-layer base-layer">
-              BASE LAYER
-              <img class="images image-1" src="images/phone1.png" alt="" />
-          </div>
-          <div class="parallax-layer mid-layer">
-              <img class="images image-2" src="images/phone1.png" alt="" />
-          </div>
+        <div class="loadingbg display-2 text-center d-flex justify-content-center align-items-end">
+          <!-- <i class="bi bi-circle-fill loadingCircle"></i> -->
+          <span class="loadingCircle"></span>
         </div>
-
-        <div id="group-2" class="parallax-group">
-          <div class="parallax-layer mid-layer">
-              MID LAYER
-              <img class="images image-3" src="images/phone1.png" alt="" />
-          </div>
-          <div class="parallax-layer top-layer">Tsd</div>
-        </div>
-
-        <div id="outro" class="parallax-group outro-screen">The End</div>
       </div>
     </div>
-      </div>
-      </body>
 
+    <div id="parallaxMain" class="container-fluid parallax p-0">
+      <div class="row parallax">
+        <div id="parallax-1" class="col-12 parallax">
+          <i id="menuBtn" class="bi bi-text-left p-3 menu-icon slide-in-left"></i>
+          <nav
+            id="menuList"
+            class="menu rounded d-flex flex-column bg-light text-dark text-center p-4 d-none"
+          >
+            <a id="menuHome" href="#link" class="jello-horizontal">
+              <div class="my-1 mx-1"></div>
+              Kezdőlap
+              <div class="underline my-1 mx-1"></div>
+            </a>
+            <a id="menuAboutme" href="#link">
+              <div class="my-1 mx-1"></div>
+              Rólam
+              <div class="underline my-1 mx-1"></div>
+            </a>
+            <a id="menuWorks" href="#link">
+              <div class="my-1 mx-1"></div>
+              Munkák
+              <div class="underline my-1 mx-1"></div>
+            </a>
+            <a id="menuCV" href="#link" id="cvMenu">
+              <div class="my-1 mx-1"></div>
+              CV
+              <div class="underline my-1 mx-1"></div>
+            </a>
+          </nav>
+
+          <h2 id="home" class="d-flex flex-row slide-in-bottom px-1">Bence Pentek</h2>
+          <h3 class="who slide-in-right">programtervező informatikus [fejlesztő]</h3>
+          <a href="https://github.com/BncPntk" target="_blank">
+            <i id="ghMain" class="bi bi-github p-3 githubLogo slide-in-right"></i>
+          </a>
+        </div>
+
+        <div id="parallax-2" class="col-12 parallax">
+          <!-- <h2>Div 2</h2> -->
+          <h2 class="line-1">Rólam</h2>
+        </div>
+
+        <div id="parallax-3" class="col-12 parallax">
+          <p class="aboutmeText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias est, placeat sed aspernatur
+            aperiam iste magnam molestiae laborum incidunt mollitia obcaecati doloribus? Quod, sequi! Tempora
+            voluptate sapiente ab repellat itaque illo iure quo fugiat necessitatibus omnis soluta, ducimus
+            sit!
+          </p>
+        </div>
+
+        <div id="parallax-4" class="col-12 parallax">
+          <div class="container">
+            <div class="row">
+              <div class="col-7">
+                <div class="left-side-content p-3">
+                  <h3 id="title" class="title mb-4"></h3>
+                  <p class="text mb-4"></p>
+                  <div class="row tags mb-3 text-center">
+                    <div id="tags" class="col-2 p-0 m-2"></div>
+                    <div id="tags" class="col-2 p-0 m-2"></div>
+                    <div id="tags" class="col-2 p-0 m-2"></div>
+                    <div id="tags" class="col-5 p-0 m-2"></div>
+                    <div id="tags" class="col-4 p-0 m-2"></div>
+                  </div>
+                  <div class="row links mb-4 d-flex justify-content-start mt-3">
+                    <div class="col-2 siteIcon mb-4 d-flex justify-content-start">
+                      <a href=""><i class="bi bi-globe2"></i></a>
+                    </div>
+                    <div class="col-2 githubIcon mb-4 d-flex justify-content-start">
+                      <a href=""><i class="bi bi-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5">
+                <img
+                  id="phone1"
+                  class="phone-img"
+                  src="https://raw.githubusercontent.com/BncPntk/Portfolio/main/images/twitter/phone1.png"
+                />
+                <img
+                  id="phone2"
+                  class=""
+                  src="https://raw.githubusercontent.com/BncPntk/Portfolio/main/images/twitter/phone2.png"
+                />
+                <!-- <img id="tablet1" class="" src="/images/tablet1.png" /> -->
+              </div>
+            </div>
+          </div>
+          <!-- <h2>Div 4</h2> -->
+        </div>
+
+        <div id="parallax-5" class="col-12 parallax">
+          <div class="container">
+            <div class="row">
+              <div class="col-7"></div>
+              <div class="col-5">
+                <img
+                  id="phone3"
+                  class="phone-img"
+                  src="https://raw.githubusercontent.com/BncPntk/Portfolio/main/images/tvSearch/phone1.png"
+                />
+                <img
+                  id="phone4"
+                  class=""
+                  src="https://raw.githubusercontent.com/BncPntk/Portfolio/main/images/tvSearch/phone2.png"
+                />
+                <!-- <img id="tablet1" class="" src="/images/tablet1.png" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="parallax-6" class="col-12 parallax">
+          <div class="container">
+            <div class="row">
+              <div class="col-7"></div>
+              <div class="col-5">
+                <img
+                  id="phone5"
+                  class=""
+                  src="https://raw.githubusercontent.com/BncPntk/Portfolio/main/images/pizza/phone1.png"
+                />
+                <img
+                  id="phone6"
+                  class=""
+                  src="https://raw.githubusercontent.com/BncPntk/Portfolio/main/images/pizza/phone2.png"
+                />
+                <!-- <img id="tablet1" class="" src="/images/tablet1.png" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="parallax-7" class="col-12 parallax">
+          <p class="aboutmeText">
+            <button id="cv" class="btn btn-lg cvBtn">CV letöltése PDF-ben</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="data.js"></script>
     <script src="script.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
