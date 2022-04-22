@@ -90,18 +90,18 @@
     margin-bottom: 0.5rem;
 
     &:hover {
-      color: $color-secondary-1;
+      color: $color-main-4;
     }
     &:hover .underline {
-      border-top: 1px solid $color-main-4;
-      border-bottom: 1px solid $color-main-4;
+      border-top: 0px solid $color-main-4;
+      border-bottom: 2px solid $color-main-4;
     }
 
     .underline {
-      border-top: 1px solid $color-main-4;
+      border-top: 0px solid $color-main-4;
       border-top-right-radius: 1px;
       border-top-left-radius: 1px;
-      border-bottom: 1px solid $color-main-4;
+      border-bottom: 2px solid $color-main-4;
       border-bottom-right-radius: 1px;
       border-bottom-left-radius: 1px;
     }

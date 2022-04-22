@@ -33,6 +33,7 @@ const menuCV = document.querySelector('#menuCV');
 
 const cv = document.querySelector('#cv');
 
+const githubLink = document.querySelector('.githubLink');
 
 menuHome.addEventListener('click', () => {
     showHideLoading(parallax);
@@ -143,6 +144,7 @@ window.onscroll = () => {
         title.innerHTML = data[0].title;
         text.innerHTML = data[0].text;
         links.style.opacity = 1;
+        githubLink.href = data[0].link2;
         tag.style.display = 'flex';
     }
 
@@ -152,6 +154,7 @@ window.onscroll = () => {
         title.innerHTML = data[1].title;
         text.innerHTML = data[1].text;
         links.style.opacity = 1;
+        githubLink.href = data[1].link2;
         tag.style.display = 'flex';
     }
     else if (pos >= 4400 && pos <= 6000) {
@@ -160,6 +163,7 @@ window.onscroll = () => {
         title.innerHTML = data[2].title;
         text.innerHTML = data[2].text;
         links.style.opacity = 1;
+        githubLink.href = data[2].link2;
         tag.style.display = 'flex';
 
     } else {
@@ -187,7 +191,7 @@ function tagsColor(n) {
         else if (tags[i].innerHTML.toUpperCase() === 'JS') {
             tags[i].style.backgroundColor = '#ebd026 ';
         }
-        else if (tags[i].innerHTML.toUpperCase() === 'SCSS') {
+        else if (tags[i].innerHTML.toUpperCase() === 'SASS') {
             tags[i].style.backgroundColor = '#cc6699'
         }
         else if (tags[i].innerHTML.toUpperCase() === 'BOOTSTRAP') {
