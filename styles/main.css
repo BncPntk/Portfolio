@@ -98,19 +98,19 @@
 }
 
 .menu a:hover {
-  color: #414833;
+  color: #66521f;
 }
 
 .menu a:hover .underline {
-  border-top: 1px solid #66521f;
-  border-bottom: 1px solid #66521f;
+  border-top: 0px solid #66521f;
+  border-bottom: 2px solid #66521f;
 }
 
 .menu a .underline {
-  border-top: 1px solid #66521f;
+  border-top: 0px solid #66521f;
   border-top-right-radius: 1px;
   border-top-left-radius: 1px;
-  border-bottom: 1px solid #66521f;
+  border-bottom: 2px solid #66521f;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 1px;
 }
@@ -149,9 +149,9 @@ body .loading .loadingbg .loadingCircle {
   margin-top: 40vh;
   height: 5rem;
   width: 5rem;
-  border-radius: 50%;
+  border-radius: 20%;
   display: inline-block;
-  background: linear-gradient(-50deg, #ff9f1c, #2ec4b6, #afc47a, #cbf3f0);
+  background: linear-gradient(-35deg, #e6eedd, #a6a57a, #66521f, #ac8a35, #7f4f24);
   background-size: 500% 500%;
   -webkit-animation: gradient 2s ease-in-out infinite, pulsating 2s ease-in-out infinite;
           animation: gradient 2s ease-in-out infinite, pulsating 2s ease-in-out infinite;
@@ -444,7 +444,7 @@ body .parallax:nth-child(3) .aboutmeText {
   width: 900px;
   margin-top: -5rem;
   margin-left: 20%;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: #212220;
 }
@@ -454,10 +454,6 @@ body .parallax:nth-child(4) {
   background-image: url("https://raw.githubusercontent.com/BncPntk/Portfolio/main/images/twitter/1.png");
   background-position: top center;
   background-attachment: fixed;
-}
-
-body .parallax:nth-child(4) .indicator {
-  color: red;
 }
 
 body .parallax:nth-child(4) .title {
@@ -496,10 +492,16 @@ body .parallax:nth-child(4) .title:after {
   }
 }
 
+body .parallax:nth-child(4) .title:hover:after {
+  -webkit-animation: none;
+          animation: none;
+}
+
 body .parallax:nth-child(4) .text {
   color: #212220;
-  top: 45%;
+  top: 46%;
   width: 35rem;
+  font-size: 1.2rem;
 }
 
 body .parallax:nth-child(4) .tags {
@@ -622,5 +624,10 @@ body .parallax:nth-child(7) .cvBtn {
 
 body .parallax:nth-child(7) .cvBtn:hover {
   background-color: #66521f;
+}
+
+body .parallax:nth-child(7) .cvBtn a {
+  color: #e6eedd;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
