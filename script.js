@@ -1,3 +1,16 @@
+// JUMP TOP OF THE PAGE ON REFRESH
+// window.onbeforeunload = function () {
+//     window.scrollTo(0, 0);
+// };
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+
+
 const parallax = document.querySelector('#parallax-1');
 const menuBtn = document.querySelector('#menuBtn');
 const menuList = document.querySelector('#menuList');
@@ -33,6 +46,7 @@ const menuCV = document.querySelector('#menuCV');
 
 const cv = document.querySelector('#cv');
 
+const webLink = document.querySelector('.webLink');
 const githubLink = document.querySelector('.githubLink');
 
 menuHome.addEventListener('click', () => {
@@ -144,6 +158,7 @@ window.onscroll = () => {
         title.innerHTML = data[0].title;
         text.innerHTML = data[0].text;
         links.style.opacity = 1;
+        webLink.href = data[0].link1;
         githubLink.href = data[0].link2;
         tag.style.display = 'flex';
     }
@@ -154,6 +169,7 @@ window.onscroll = () => {
         title.innerHTML = data[1].title;
         text.innerHTML = data[1].text;
         links.style.opacity = 1;
+        webLink.href = data[1].link1;
         githubLink.href = data[1].link2;
         tag.style.display = 'flex';
     }
@@ -163,6 +179,7 @@ window.onscroll = () => {
         title.innerHTML = data[2].title;
         text.innerHTML = data[2].text;
         links.style.opacity = 1;
+        webLink.href = data[2].link1;
         githubLink.href = data[2].link2;
         tag.style.display = 'flex';
 
